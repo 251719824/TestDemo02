@@ -24,7 +24,7 @@ public class ItemServiceImpl implements ItemService {
 		list.add(new Item(5, "商品 5",5));
 		return list;
 	}
-
+	private  void print(){}
 	@Override
 	public void decreaseNumbers(List<Item> list) {
 		for(Item item : list) {
