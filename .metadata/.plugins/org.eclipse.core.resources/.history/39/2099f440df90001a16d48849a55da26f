@@ -1,0 +1,5 @@
+package cn.tedu.sp09.client;
+
+public interface UserFeignService {
+
+}

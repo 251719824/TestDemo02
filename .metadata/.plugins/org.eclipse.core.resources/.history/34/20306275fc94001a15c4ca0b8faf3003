@@ -1,0 +1,34 @@
+package rabbitmq.m6_rpc;
+
+import java.util.Scanner;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class TestABQ {
+	
+	static BlockingQueue<Double> q = new ArrayBlockingQueue<>(10);
+	
+	public static void main(String[] args) {
+			new Thread() {
+				public void run() {
+					System.out.println("\n按回车放入数据");
+					new Scanner(System.in).nextLine();
+					double d = Math.random();
+						q.offer(d);//放入数据
+					
+				};
+			}.start();
+			
+			new Thread() {
+				public void run() {
+					try {
+						Double d = q.take();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					
+					
+				};
+			}.start();
+	}
+}

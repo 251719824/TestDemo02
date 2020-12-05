@@ -1,0 +1,45 @@
+package rabbitmq.m6_rpc;
+
+import java.util.Scanner;
+import java.util.UUID;
+
+import com.rabbitmq.client.AMQP.BasicProperties;
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.ConnectionFactory;
+
+public class RpcClient {
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+		System.out.println("求第几个菲波那切数");
+		int n = new Scanner(System.in).nextInt();
+		
+		
+	}
+	private static long f(int n) throws Exception{
+		//1.发送调用数据
+		//2.接收执行结果
+		ConnectionFactory f = new ConnectionFactory();
+		f.setHost("192.168.64.140");	//www.wht6.cn
+		f.setPort(5672);
+		f.setUsername("admin");
+		f.setPassword("admin");
+		//f.setVirtualHost("x");
+		
+		Channel c = f.newConnection().createChannel();
+		//发送数据:n,返回队列名称,关联id
+		c.queueDeclare("rpc_queue", false, false, false, null);
+		String queue = c.queueDeclare().getQueue();
+		String cid = UUID.randomUUID().toString();
+		BasicProperties props=	new BasicProperties.Builder()
+			.replyTo(queue)
+			.correlationId(queue)
+			.build();
+		
+		c.basicPublish("", "rpc_queue", props, (""+n).getBytes());
+		
+		System.out.println("已发送调用");
+		System.out.println("主线程不必等待,继续执行其他运算");
+	
+	}
+	
+}

@@ -1,0 +1,18 @@
+package cn.tedu.sp09.client;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+import cn.tedu.sp01.pojo.Item;
+import cn.tedu.web.util.JsonResult;
+
+@FeignClient(name="item-service")
+public interface ItemFeignClient {
+	
+	//调用后台商品服务
+	JsonResult<List<Item>> getItem(String orderId);
+	
+	
+	
+}

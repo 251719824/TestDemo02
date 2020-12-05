@@ -1,0 +1,24 @@
+CustomFiltersActionGroup.org.eclipse.jdt.ui.PackageExplorer.TAG_DUMMY_TO_TEST_EXISTENCE=storedViewPreferences
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="cn.tedu.web.util.JsonResult"><rhs name\="cn.tedu.web.util.JsonResult"/></lhs><lhs name\="org.springframework.util.MultiValueMap"><rhs name\="org.springframework.http.HttpHeaders"/></lhs><lhs name\="java.util.Map"><rhs name\="org.springframework.http.HttpHeaders"/></lhs><lhs name\="org.springframework.http.HttpHeaders"><rhs name\="org.springframework.http.HttpHeaders"/></lhs><lhs name\="org.springframework.util.MimeType"><rhs name\="org.springframework.http.MediaType"/></lhs><lhs name\="org.springframework.http.MediaType"><rhs name\="org.springframework.http.MediaType"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.ByteArrayInputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.ByteArrayInputStream"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.ByteArrayInputStream"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="com.rabbitmq.client.ConnectionFactory"/></lhs><lhs name\="com.rabbitmq.client.ConnectionFactory"><rhs name\="com.rabbitmq.client.ConnectionFactory"/></lhs><lhs name\="java.lang.CharSequence"><rhs name\="java.lang.String"/></lhs></history>
+content_assist_number_of_computers=17
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+lastRecentlyUsedFilters=org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter,
+org.eclipse.buildship.ui.packageexplorer.filter.gradle.buildfolder=true
+org.eclipse.buildship.ui.packageexplorer.filter.gradle.subProject=true
+org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter=true
+org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter=true
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter=true
+org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter=true
+org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter=true
+org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter=true
+org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter=true
+org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*=true
+org.eclipse.jdt.ui.formatterprofiles.version=18
+org.eclipse.pde.ui.ExternalPluginLibrariesFilter1=true
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

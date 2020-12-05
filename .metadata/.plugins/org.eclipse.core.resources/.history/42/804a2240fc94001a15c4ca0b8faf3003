@@ -1,0 +1,5 @@
+package rabbitmq.m6_rpc;
+
+public class TestABQ {
+
+}

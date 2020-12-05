@@ -1,0 +1,21 @@
+package cn.tedu.sp09.client;
+
+import java.util.List;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+import cn.tedu.sp01.pojo.Item;
+import cn.tedu.web.util.JsonResult;
+
+@FeignClient(name="item-service")
+public interface ItemFeignClient {
+	
+	//调用后台商品服务,调用商品服务的路径:"/{orderId}"
+	@GetMapping("/{orderId}")
+	JsonResult<List<Item>> getItem(@PathVariable String orderId);
+	
+	
+	
+}

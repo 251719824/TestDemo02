@@ -1,0 +1,9 @@
+package cn.tedu.sp01.service;
+
+import cn.tedu.sp01.pojo.User;
+
+public interface UserService {
+	User getUser (Integer id);
+	
+	void addScord(Integer id,Integer score);
+}
